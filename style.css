@@ -1,36 +1,114 @@
 html {
-    box-sizing: border-box;
-  
-    /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+nav{
+  font-size:2rem;
+  background:linear-gradient(orange,brown);
+  width:100%;
+  display:flex;
+  justify-content:center;
+  top:0;
+  left:0;
+  position:fixed;
+  font-family:sans-serif;
+font-weight:bold;
+
+}
+
+.nav-link{text-decoration:none;
+color:white;
+padding:2rem;} 
+
+nav>ul{
+  list-style:none;
+  display:flex;
+  justify-content:space-evenly;
+
+}
+
+
+body{
+  margin:auto;
+}
+
+#projects-grid{
+  padding:8rem;
+  width:100%;
+  background:linear-gradient(darkblue, midnightblue);
+  display:flex;
+  overflow:hidden;
+  justify-content:center;
+ gap:6rem;
+ flex-wrap:wrap;
+ align-items:space-between;
+ 
+}
+
+.tile{width:400px;
+    height:300px;
+object-fit:cover;
+
+
+border:ghostwhite solid;
+display:block;
+
+}
+
+h1, h1, h3{text-align:center;
+          font-size:6rem;
+          font-weight:normal;
+          color:whitesmoke;
+          font-weight:bold;
+          font-family:sans-serif;}
+
+#project-tile{border:solid black;}
+
+img{overflow:hidden;}
+#welcome-section>p{
+  font-family:sans-serif;
+  text-align:center;
+  font-size:1.6rem;
+  color:lightgray;
   }
   
-  nav{
-    font-size:2rem;
-    background:linear-gradient(orange,brown);
-    width:100%;
-    display:flex;
-    justify-content:center;
-    top:0;
-    left:0;
-    position:fixed;
-    font-family:sans-serif;
-  font-weight:bold;
-  
-  }
-  
-  .nav-link{text-decoration:none;
-  color:white;
-  padding:2rem;} 
-  
-  nav>ul{
-    list-style:none;
-    display:flex;
-    justify-content:space-evenly;
-  
-  }
-  
+  img{
+    display:block;}
+
+    .project-title{
+      font-family:sans-serif;
+     text-align:center;
+      font-size:2.5rem;
+      font-weight:bold;
+      background:linear-gradient(90deg,purple,darkblue);
+      color:gray;
+      border-radius:0%;
+      
+    }
+    a{text-decoration:none;}
+
+    #welcome-section{
+      height:100vh;
+     display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(purple,darkblue);
+      padding-top:500px;
+
+    }
+    ul{display:flex;}
+    @media(max-width:720px){body{
+margin:0;
+left:0;
+padding:0;
+
+    }
+    }
